@@ -1,0 +1,147 @@
+@media screen and (max-width: 992px) {
+    section:first-of-type {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .space--gap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #target,
+    #info {
+        padding: 12px;
+    }
+
+    #target .section-title {
+        margin-left: 15%;
+    }
+
+    #info .section-title {
+        margin-left: 20%;
+    }
+
+    .inf {
+        padding: 3px 0;
+    }
+
+    .inf > b {
+        width: 80px;
+        flex-shrink: 0;
+    }
+
+    #experience,
+    #skill,
+    #language,
+    #education,
+    #activity,
+    #hobbies {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    section.space--gap {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #certificate .section-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #certificate .card {
+        gap: 15px;
+        min-width: 0;
+    }
+
+    #certificate .card img {
+        width: 30%;
+        max-width: 120px;
+        height: auto;
+    }
+
+    #certificate .card--text {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #certificate h4 {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #certificate p {
+        font-size: 14px;
+    }
+
+    #project .section-content {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 15px;
+    }
+
+    #project .card {
+        min-width: 0;
+    }
+
+    #project .card img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    #project h3 {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .sub-title {
+        gap: 8px;
+        padding: 12px;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    .btn-primary {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    #project .content,
+    #project .task,
+    #project .last {
+        font-size: 13px;
+    }
+
+    .card .content > div,
+    .card .task > div,
+    .card .last > div {
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .card .content > div p:first-child,
+    .card .task > div p:first-child,
+    .card .last > div p:first-child {
+        flex: 0 0 65px;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    nav > * {
+        font-size: 14px;
+    }
+
+    .c-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    footer {
+        gap: 25px;
+    }
+}

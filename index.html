@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/tablet.css" />
+  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="stylesheet" href="./css/font.css" />
+  <title>Assignment 03</title>
+</head>
+<body>
+  
+  <div class="banner">
+    <img src="./banner.jpg" alt="banner"/>
+    <div class="banner_title"> Lê Gia Minh </div>
+  </div>
+  <nav>
+    <div class="item">
+        <a href="#info">
+          <i class="icon-user"></i> Thông tin
+        </a>
+    </div>
+    <div class="item">
+        <a href="#experience">
+          <i class="icon-doc-text-inv"></i> Lý lịch
+        </a>
+    </div>
+    <div class="item nav-brand">
+        <a href="#banner">
+          <img src="./minz.png" alt="" class="c-img">
+        </a>
+    </div>
+    <div class="item">
+        <a href="#certificate">
+          <i class="icon-mail-alt"></i> Chứng chỉ
+        </a>
+    </div>
+    <div class="item">
+        <a href="#project">
+          <i class="icon-star-1"></i> Dự án
+        </a>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <div id ="target" class="row">
+        <div class ="section-title">Mục tiêu nghề nghiệp</div>
+        <div class ="section-content">Em mong muốn theo học ngành Khoa học Máy tính và trong tương lai làm việc trong lĩnh vực công nghệ. Em hy vọng trong quá trình học đại học sẽ được khám phá nhiều lĩnh vực khác nhau để tìm ra chuyên ngành phù hợp với bản thân, đồng thời phát triển những giải pháp công nghệ có ích cho xã hội.</div>
+      </div>
+      <div id ="info">
+        <div class ="section-title">Thông tin cá nhân</div>
+        <div class ="section-content">
+          <div class="inf">
+						<b>Ngày Sinh</b>
+						<p>23/02/2012</p>
+					</div>
+					<div class="inf">
+						<b>Giới tính</b>
+						<p>Nam</p>
+					</div>
+					<div class="inf">
+						<b>Địa chỉ</b>
+						<p>23/16 Lương Văn Nho- Khu phố 4- Phường Tân Triều- Thành phố Đồng Nai</p>
+					</div>
+					<div class="inf">
+						<b>SĐT</b>
+						<p>0979822508</p>
+					</div>
+					<div class="inf">
+						<b>Email</b>
+						<p>giaminh230212@gmail.com</p>
+					</div>
+        </div>
+        <div class ="submit-email">
+          <input type="email" id="email">
+          <p id="give"></p>
+          <button onclick="submitEmail()" type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </section>
+    <section class="space--gap">
+      <div id="experience" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title"> Kinh nghiệm <i class="ic-toolbox"></i> </div>
+        <div class="timeline">
+          <div class="section-content">
+            <div class="title">Kỹ năng thuyết trình</div>
+            <div class="subb-title"> 07/2025 - <span class="btn-primary">Hiện tại</span></div>
+            <div class="content">
+              <p>- Thuyết trình trước lớp hiệu quả.</p>
+              <p>- Trình bày ý tưởng một cách rõ ràng và thuyết phục.</p>
+              <p>- Khả năng lãnh đạo, dẫn lối cho các bạn học.</p>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="title">Dự án cá nhân - Website Digital CV</div>
+            <div class="subb-title">07/2026 - 08/2026</div>
+            <div class="content">
+              <p>- Thiết kế giao diện bằng HTML và CSS.</p>
+              <p>- Xây dựng bố cục website theo yêu cầu của đề bài.</p>
+              <p>- Sử dụng Flexbox/Grid để sắp xếp các thành phần</p>
+              <p>- Tối ưu hiển thị trên nhiều kích thước màn hình.</p>
+            </div>
+          </div>
+        </div>
+        <div class="control-view">
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+      <div id="skill" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title">Kỹ năng <i class="ic-tools-2"></i></div>
+        <div class="section-content">
+          <div class="title">HTML/CSS: Fundamental</div>
+          <div class="o fill"></div>
+          <div class="o"></div>
+          <div class="o"></div>
+        </div>
+        <div class="section-content">
+          <div class="title">C++: Intermediate</div>
+          <div class="o fill"></div>
+          <div class="o fill"></div>
+          <div class="o"></div>
+        </div>
+        <div class="section-content">
+          <div class="title">Math: Intermediate</div>
+          <div class="o fill"></div>
+          <div class="o fill"></div>
+          <div class="o"></div>
+        </div>
+        <div class="section-content">
+          <div class="title">Python: Fundamental</div>
+          <div class="o fill"></div>
+          <div class="o"></div>
+          <div class="o"></div>
+        </div>
+        <div class="control-view" >
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+      <div id="language" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title">Ngôn ngữ <i class="ic-mic"></i></div>
+        <div class="section-content">
+          <div class="title">Tiếng Anh: IELTS 7.0</div>
+          <div class="o fill"></div>
+          <div class="o fill"></div>
+          <div class="o"></div>
+        </div>
+        <div class="section-content">
+          <div class="title">Tiếng Việt: MASTER</div>
+          <div class="o fill"></div>
+          <div class="o fill"></div>
+          <div class="o fill"></div>
+        </div>
+        <div class="control-view" >
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+      <div id="education" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title"> Học Vấn <i class="ic-pencil"></i> </div>
+        <div class="timeline">
+          <div class="section-content">
+            <div class="title">Sedbergh Vietnm</div>
+            <div class="subb-title"> 2024 - <span class="btn-primary">Hiện Tại</span></div>
+            <div class="content">
+              <p>- Học Bổng 80%</p>
+              <p>- GPA: 9.6/10</p>
+            </div>
+          </div>
+        </div>
+        <div class="control-view" >
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+      <div id="activity" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title"> Hoạt Động <i class="ic-megaphone"></i> </div>
+        <div class="timeline">
+          <div class="section-content">
+            <div class="title">Trường Hè Toán Học VSSAM</div>
+            <div class="subb-title"> 2025 - 2026</span></div>
+            <div class="content">
+              <p>- Tham gia các buổi học và thảo luận về các vấn đề toán học nâng cao.</p>
+              <p>- Tham gia các hoạt động ngoại khóa liên quan đến toán học.</p>
+              <p>- Được tổ chức bởi Trường THPT Năng Khiếu.</p>
+            </div>
+          </div>
+          <div class="section-content">
+            <div class="title">Từ Thiện Bệnh Viên Nhi Đồng</div>
+            <div class="subb-title">2025 - 2026</div>
+            <div class="content">
+              <p>- Tham gia các hoạt động từ thiện, giúp đỡ bệnh nhân nhi đồng.</p>
+              <p>- Tặng quà và trò chuyện với các em nhỏ.</p>
+            </div>
+          </div>
+        </div>
+        <div class="control-view" >
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+      <div id="hobbies" onmouseover="handleOnMouseOver(this)" onmouseout="handleOnMouseOut(this)" class="parent">
+        <div class="section-title"> Sở Thích <i class="ic-telescope"></i></div>
+        <div class="section-content">
+          <div class="hobby-list">
+            <div class="hobby">
+              <div class="circle">
+                <i class="icon-book"></i>
+              </div>
+              <p>Đọc truyện</p>
+            </div>
+            <div class="hobby">
+              <div class="circle">
+                <i class="icon-gamepad"></i>
+              </div>
+              <p>Chơi game</p>
+            </div>
+            <div class="hobby">
+              <div class="circle">
+                <i class="icon-video"></i>
+              </div>
+              <p>Coi phim</p>
+            </div>
+            <div class="hobby">
+              <div class="circle">
+                <i class="icon-pencil"></i>
+                </div>
+              <p>Vẽ</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="control-view" >
+          <button type="button" class="btn btn-info view-more" onclick="handleViewMore(this)">View More</button>
+        </div>
+      </div>
+    </section>
+    <section class="space">
+      <div id="certificate">
+        <div class="section-title">Chứng Chỉ Giải Thưởng</div>
+        <div class="section-content">
+          <div class="card1">
+            <img src="./c1.png" alt="" width="300"/>
+            <div class="card--text">
+              <h4>Gold Medal IJIO - International Round</h4>
+              <p>- Cuộc Thi Lập Trình</p>
+              <p>- Top 1 in Vietnam</p>
+            </div>
+          </div>
+          <div class="card1">
+            <img src="./c2.png" alt="" width="300"/>
+            <div class="card--text">
+              <h4>Gold Medal SMGF - International Round</h4>
+              <p>- Cuộc Thi Toán Học</p>
+              <p>- Top 5 in Vietnam</p>
+            </div>
+          </div>
+          <div class="card1">
+            <img src="./c3.png" alt="" width="300"/>
+            <div class="card--text">
+              <h4>Gold Medal IMEC - National Round</h4>
+              <p>- Cuộc Thi Toán Học</p>
+              <p>- Perfect Score</p>
+            </div>
+          </div>
+          <div class="card1">
+            <img src="./c4.png" alt="" width="300"/>
+            <div class="card--text">
+              <h4>Gold Medal SMC - National Round</h4>
+              <p>- Cuộc Thi Toán Học</p>
+              <p>- Top 3 in Vietnam</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="project">
+        <div class="section-title">Dự Án</div>
+        <div class="section-content">
+          <div class="card">
+            <div class="project-cv">
+              <img src="./cv.png" alt="" width="100%">
+            </div>
+            <h3>CV CÁ NHÂN</h3>
+            <div class="sub-title">
+              <i class="btn-primary">2021</i>
+              <i class="icon-user-1"></i>FUNIX
+              <i class="icon-lamp"></i>Developer
+            </div>
+            <div class="content">
+              <div>
+                <p>Mô tả</p>
+                <p> Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như năng nghề nghiệp.</p>
+              </div>
+            </div>
+            <div class="task">
+              <div>
+                <p>Nhiệm vụ</p>
+                <p>Phát triển, tối ưu mã nguồn và xử lý các lỗi phát sinh trong quá trình xây dựng website.</p>
+              </div>
+            </div>
+            <div class="last">
+              <div>
+                <p>Công nghệ</p>
+                <p>HTML, CSS</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-sharktank">
+              <img src="./shark.jpg" alt="" width="100%">
+            </div>
+            <h3>SharkTank</h3>
+            <div class="sub-title">
+              <i class="btn-primary">2024</i>
+              <i class="icon-user-1"></i>Sedbergh Vietnam
+              <i class="icon-lamp"></i>Speaker/Inventor
+            </div>
+            <div class="content">
+              <div>
+                <p>Mô tả</p>
+                <p> Dự án môn Vật Lý với hình thức đầy độc đáo, lấy cảm hứng từ mô hình kêu gọi đầu tư của chương trình Thương vụ bạc tỷ.</p>
+              </div>
+            </div>
+            <div class="task">
+              <div>
+                <p>Nhiệm vụ</p>
+                <p>Lên ý tưởng, xây dựng kịch bản, cân đo chi phí để tạo nên sản phẩm đầu tay.</p>
+              </div>
+            </div>
+            <div class="last">
+              <div>
+                <p>Sản Phẩm</p>
+                <p>Kính Vạn hoa, Kính Hologram</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="project-ted">
+              <img src="./ted.png" alt="" width="100%">
+            </div>
+            <h3>TedEd</h3>
+            <div class="sub-title">
+              <i class="btn-primary">2023</i>
+              <i class="icon-user-1"></i>IPS school
+              <i class="icon-lamp"></i>Speaker
+            </div>
+            <div class="content">
+              <div>
+                <p>Mô tả</p>
+                <p> Dự án TED-Ed nghiên cứu tác động của nghiện trò chơi điện tử đối với trẻ em và đề xuất giải pháp.</p>
+              </div>            
+            </div>
+            <div class="task">
+              <div>
+                <p>Nhiệm vụ</p>
+                <p>Nghiên cứu, thiết kế nội dung, slide và thuyết trình dự án.</p>
+              </div>
+            </div>
+            <div class="last">
+              <div>
+                <p>Tiêu Đề</p>
+                <p>How kids can get addicted to videogames, and how video games may hurt them</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <a href="https://www.linkedin.com/in/gia-minh-l%C3%AA-534311425/">
+        <i class="icon-linkedin-circled"></i>
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/x2.penmisuki.3x/">
+        <i class="icon-instagram"></i>
+        Instagram
+      </a>
+      <a href="https://github.com/giaminh230212">
+        <i class="icon-github-circled"></i>
+        GitHub
+      </a>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js" ></script>
+</body>
+</html>
